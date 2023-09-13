@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+form {
+  max-width: 954px;
+  width: 100%;
+  min-height: 594px;
+  background: linear-gradient(to right, #BE0909 65%, #FFB039 35%);
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  resize: none;
+}
