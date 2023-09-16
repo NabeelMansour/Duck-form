@@ -6,19 +6,123 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  margin: 10rem auto;
+  max-width: 1400px;
+  min-height: 900px;
+}
+
+.form-container {
+  display: flex;
+  position: relative;
+}
+
+.form-content {
+  max-width: 609px;
+  min-height: 594px;
+  width: 100%;
+  background: #BE0909 65%;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
 }
 
 form {
-  max-width: 954px;
+  position: absolute;
+  top: 64px;
+  left: 65px;
+  width: 100%;
+}
+
+.form-extension {
+  max-width: 345px;
   width: 100%;
   min-height: 594px;
-  background: linear-gradient(to right, #BE0909 65%, #FFB039 35%);
-  color: #fff;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
+  background: #FFB039;
+}
+
+input {
+  max-width: 400px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #9DBEBB;
+}
+
+input[type="email"],
+select {
+  max-width: 160px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #9DBEBB;
+}
+
+input[type="email"] {
+  padding-bottom: 10px;
+}
+
+textarea {
+  max-width: 400px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #9DBEBB;
 }
 
 #message {
   resize: none;
+}
+
+label {
+  display: block;
+  padding-bottom: 41px;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+::placeholder {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 4.8px;
+  color: #fff;
+}
+
+.form-image {
+  display: block;
+  width: 100%;
+  max-width: 663px;
+  max-height: 603px;
+  position: absolute;
+  left: 350px;
+  top: 51px;
+}
+
+.form-btn {
+  position: absolute;
+  top: 400px;
+  right: 143px;
+  left: 104px;
+  bottom: 64px;
+}
+
+.form-btn button {
+  border-radius: 40px;
+  width: 202px;
+  height: 48px;
+  border: none;
+  background: #468189;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 10%;
+  line-height: 21px;
+  text-transform: uppercase;
 }
